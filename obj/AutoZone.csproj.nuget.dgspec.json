@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\1212-4\\Desktop\\An7on\\AutoZone\\AutoZone.csproj": {}
+    "C:\\Users\\an7on\\Desktop\\MainProject\\AutoZone-Project\\AutoZone.csproj": {}
   },
   "projects": {
-    "C:\\Users\\1212-4\\Desktop\\An7on\\AutoZone\\AutoZone.csproj": {
+    "C:\\Users\\an7on\\Desktop\\MainProject\\AutoZone-Project\\AutoZone.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\1212-4\\Desktop\\An7on\\AutoZone\\AutoZone.csproj",
+        "projectUniqueName": "C:\\Users\\an7on\\Desktop\\MainProject\\AutoZone-Project\\AutoZone.csproj",
         "projectName": "AutoZone",
-        "projectPath": "C:\\Users\\1212-4\\Desktop\\An7on\\AutoZone\\AutoZone.csproj",
-        "packagesPath": "C:\\Users\\1212-4\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\1212-4\\Desktop\\An7on\\AutoZone\\obj\\",
+        "projectPath": "C:\\Users\\an7on\\Desktop\\MainProject\\AutoZone-Project\\AutoZone.csproj",
+        "packagesPath": "C:\\Users\\an7on\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\an7on\\Desktop\\MainProject\\AutoZone-Project\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\1212-4\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\an7on\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -57,19 +56,29 @@
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[9.0.9, )"
+              "version": "[9.0.12, )"
             },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
-              "version": "[9.0.9, )"
+              "version": "[9.0.12, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[9.0.9, )"
+              "version": "[9.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[9.0.12, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.9, )"
+              "version": "[9.0.12, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[9.0.12, )"
             }
           },
           "imports": [
@@ -91,7 +100,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
