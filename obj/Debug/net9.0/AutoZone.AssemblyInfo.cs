@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AutoZone")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f30b039e683328b7a1413fefc210aeb772b5ddd5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a848a2bc8a1893552277339b799c75067908bedc")]
 [assembly: System.Reflection.AssemblyProductAttribute("AutoZone")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AutoZone")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
