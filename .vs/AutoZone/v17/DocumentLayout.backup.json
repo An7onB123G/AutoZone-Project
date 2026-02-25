@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\1212-4\\Desktop\\An7on\\\u041F\u0440\u043E\u0435\u043A\u0442\\AutoZone-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{026E9B86-AF94-49A2-8EC1-19874045F2CB}|AutoZone.csproj|c:\\users\\1212-4\\desktop\\an7on\\\u043F\u0440\u043E\u0435\u043A\u0442\\autozone-project\\services\\applicationbuilderextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{026E9B86-AF94-49A2-8EC1-19874045F2CB}|AutoZone.csproj|solutionrelative:services\\applicationbuilderextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{026E9B86-AF94-49A2-8EC1-19874045F2CB}|AutoZone.csproj|c:\\users\\1212-4\\desktop\\an7on\\\u043F\u0440\u043E\u0435\u043A\u0442\\autozone-project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{026E9B86-AF94-49A2-8EC1-19874045F2CB}|AutoZone.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{026E9B86-AF94-49A2-8EC1-19874045F2CB}|AutoZone.csproj|c:\\users\\1212-4\\desktop\\an7on\\\u043F\u0440\u043E\u0435\u043A\u0442\\autozone-project\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{026E9B86-AF94-49A2-8EC1-19874045F2CB}|AutoZone.csproj|solutionrelative:areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{026E9B86-AF94-49A2-8EC1-19874045F2CB}|AutoZone.csproj|c:\\users\\1212-4\\desktop\\an7on\\\u043F\u0440\u043E\u0435\u043A\u0442\\autozone-project\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{026E9B86-AF94-49A2-8EC1-19874045F2CB}|AutoZone.csproj|solutionrelative:areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{026E9B86-AF94-49A2-8EC1-19874045F2CB}|AutoZone.csproj|c:\\users\\1212-4\\desktop\\an7on\\\u043F\u0440\u043E\u0435\u043A\u0442\\autozone-project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{026E9B86-AF94-49A2-8EC1-19874045F2CB}|AutoZone.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{026E9B86-AF94-49A2-8EC1-19874045F2CB}|AutoZone.csproj|c:\\users\\1212-4\\desktop\\an7on\\\u043F\u0440\u043E\u0435\u043A\u0442\\autozone-project\\services\\applicationbuilderextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{026E9B86-AF94-49A2-8EC1-19874045F2CB}|AutoZone.csproj|solutionrelative:services\\applicationbuilderextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{026E9B86-AF94-49A2-8EC1-19874045F2CB}|AutoZone.csproj|c:\\users\\1212-4\\desktop\\an7on\\\u043F\u0440\u043E\u0435\u043A\u0442\\autozone-project\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -30,17 +30,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Users\\1212-4\\Desktop\\An7on\\\u041F\u0440\u043E\u0435\u043A\u0442\\AutoZone-Project\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
               "ToolTip": "C:\\Users\\1212-4\\Desktop\\An7on\\\u041F\u0440\u043E\u0435\u043A\u0442\\AutoZone-Project\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
               "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABkAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-02-22T20:43:16.156Z",
               "IsPinned": true,
@@ -48,13 +48,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Register.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\1212-4\\Desktop\\An7on\\\u041F\u0440\u043E\u0435\u043A\u0442\\AutoZone-Project\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
               "ToolTip": "C:\\Users\\1212-4\\Desktop\\An7on\\\u041F\u0440\u043E\u0435\u043A\u0442\\AutoZone-Project\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
               "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "ViewState": "AgIAAIMAAAAAAAAAAAAewI4AAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAALgAAAAAAAAAAAAnwIkAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-22T20:43:18.049Z",
               "IsPinned": true,
@@ -74,26 +74,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "ApplicationBuilderExtension.cs",
               "DocumentMoniker": "C:\\Users\\1212-4\\Desktop\\An7on\\\u041F\u0440\u043E\u0435\u043A\u0442\\AutoZone-Project\\Services\\ApplicationBuilderExtension.cs",
               "RelativeDocumentMoniker": "Services\\ApplicationBuilderExtension.cs",
               "ToolTip": "C:\\Users\\1212-4\\Desktop\\An7on\\\u041F\u0440\u043E\u0435\u043A\u0442\\AutoZone-Project\\Services\\ApplicationBuilderExtension.cs",
               "RelativeToolTip": "Services\\ApplicationBuilderExtension.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAIAwwBsAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-25T08:25:18.908Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-25T08:25:18.908Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\1212-4\\Desktop\\An7on\\\u041F\u0440\u043E\u0435\u043A\u0442\\AutoZone-Project\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\1212-4\\Desktop\\An7on\\\u041F\u0440\u043E\u0435\u043A\u0442\\AutoZone-Project\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-22T21:06:20.517Z",
               "EditorCaption": ""

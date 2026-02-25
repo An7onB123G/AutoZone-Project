@@ -85,6 +85,11 @@ namespace AutoZone.Areas.Identity.Pages.Account
             [Display(Name = "Email")]
             public string Email { get; set; }
 
+            [Required]
+            [Phone]
+            [Display(Name = "PhoneNumber")]
+            public string PhoneNumber { get; set; }
+
             [Required(ErrorMessage = "This field is requared!")]
             [Display(Name = "First Name")]
             public string FirstName { get; set; }
@@ -127,13 +132,15 @@ namespace AutoZone.Areas.Identity.Pages.Account
             if (ModelState.IsValid)
             {
                 //var user = CreateUser();
-                Client user = new Client
+                Client user = new Client();
                 {
-                    UserName = Input.UserName,
-                    Email = Input.Email,
-                    FirstName = Input.FirstName,
-                    LastName = Input.LastName
-                };
+                    user.UserName = Input.UserName;
+                    user.Email = Input.Email;
+                    user.FirstName = Input.FirstName;
+                    user.LastName = Input.LastName;
+                    user.PhoneNumber = Input.PhoneNumber;
+                }
+                ;
 
                 await _userStore.SetUserNameAsync(user, Input.UserName, CancellationToken.None);
                 await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
