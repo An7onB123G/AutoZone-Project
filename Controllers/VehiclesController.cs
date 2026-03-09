@@ -50,9 +50,9 @@ namespace AutoZone.Controllers
         // GET: Vehicles/Create
         public IActionResult Create()
         {
-            ViewData["BrandModelId"] = new SelectList(_context.BrandModels, "Id", "Id");
-            ViewData["CarTypeId"] = new SelectList(_context.CarTypes, "Id", "Id");
-            ViewData["EngineTypeId"] = new SelectList(_context.EngineTypes, "Id", "Id");
+            ViewData["BrandModelId"] = new SelectList(_context.BrandModels, "Id", "Model");
+            ViewData["CarTypeId"] = new SelectList(_context.CarTypes, "Id", "Name");
+            ViewData["EngineTypeId"] = new SelectList(_context.EngineTypes, "Id", "Name");
             return View();
         }
 
@@ -61,17 +61,18 @@ namespace AutoZone.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,CatalogNumber,BrandModelId,CarTypeId,EngineTypeId,Description,Country,Year,IsAutomatic,Mileage,Power,ImageURL,Price,RegisterOn")] Vehicle vehicle)
+        public async Task<IActionResult> Create([Bind("CatalogNumber,BrandModelId,CarTypeId,EngineTypeId,Description,Country,Year,IsAutomatic,Mileage,Power,ImageURL,Price,RegisterOn")] Vehicle vehicle)
         {
+            vehicle.RegisterOn = DateTime.Now;
             if (ModelState.IsValid)
             {
                 _context.Add(vehicle);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["BrandModelId"] = new SelectList(_context.BrandModels, "Id", "Id", vehicle.BrandModelId);
-            ViewData["CarTypeId"] = new SelectList(_context.CarTypes, "Id", "Id", vehicle.CarTypeId);
-            ViewData["EngineTypeId"] = new SelectList(_context.EngineTypes, "Id", "Id", vehicle.EngineTypeId);
+            ViewData["BrandModelId"] = new SelectList(_context.BrandModels, "Id", "Brand", vehicle.BrandModelId);
+            ViewData["CarTypeId"] = new SelectList(_context.CarTypes, "Id", "Name", vehicle.CarTypeId);
+            ViewData["EngineTypeId"] = new SelectList(_context.EngineTypes, "Id", "Name", vehicle.EngineTypeId);
             return View(vehicle);
         }
 
@@ -88,9 +89,9 @@ namespace AutoZone.Controllers
             {
                 return NotFound();
             }
-            ViewData["BrandModelId"] = new SelectList(_context.BrandModels, "Id", "Id", vehicle.BrandModelId);
-            ViewData["CarTypeId"] = new SelectList(_context.CarTypes, "Id", "Id", vehicle.CarTypeId);
-            ViewData["EngineTypeId"] = new SelectList(_context.EngineTypes, "Id", "Id", vehicle.EngineTypeId);
+            ViewData["BrandModelId"] = new SelectList(_context.BrandModels, "Id", "Brand", vehicle.BrandModelId);
+            ViewData["CarTypeId"] = new SelectList(_context.CarTypes, "Id", "Name", vehicle.CarTypeId);
+            ViewData["EngineTypeId"] = new SelectList(_context.EngineTypes, "Id", "Name", vehicle.EngineTypeId);
             return View(vehicle);
         }
 
@@ -106,6 +107,7 @@ namespace AutoZone.Controllers
                 return NotFound();
             }
 
+            vehicle.RegisterOn = DateTime.Now;
             if (ModelState.IsValid)
             {
                 try
@@ -126,9 +128,9 @@ namespace AutoZone.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["BrandModelId"] = new SelectList(_context.BrandModels, "Id", "Id", vehicle.BrandModelId);
-            ViewData["CarTypeId"] = new SelectList(_context.CarTypes, "Id", "Id", vehicle.CarTypeId);
-            ViewData["EngineTypeId"] = new SelectList(_context.EngineTypes, "Id", "Id", vehicle.EngineTypeId);
+            ViewData["BrandModelId"] = new SelectList(_context.BrandModels, "Id", "Brand", vehicle.BrandModelId);
+            ViewData["CarTypeId"] = new SelectList(_context.CarTypes, "Id", "Name", vehicle.CarTypeId);
+            ViewData["EngineTypeId"] = new SelectList(_context.EngineTypes, "Id", "Name", vehicle.EngineTypeId);
             return View(vehicle);
         }
 

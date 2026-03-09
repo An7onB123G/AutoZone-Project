@@ -1,4 +1,7 @@
-﻿namespace AutoZone.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.Reflection.Metadata;
+
+namespace AutoZone.Models
 {
     public class Vehicle
     {
@@ -17,7 +20,10 @@
         public int Mileage { get; set; }
         public int Power { get; set; }
         public string ImageURL { get; set; }
+
+        [Column(TypeName="decimal(10, 2)")]
         public decimal Price { get; set; }
+
         public DateTime RegisterOn { get; set; }
         public ICollection<Order> Orders { get; set; }
     }
