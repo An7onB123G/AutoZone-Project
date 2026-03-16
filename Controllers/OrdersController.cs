@@ -1,22 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using AutoZone.Data;
+using AutoZone.Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using AutoZone.Data;
-using AutoZone.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace AutoZone.Controllers
 {
+    [Authorize]
     public class OrdersController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly UserManager<Client> _userManager;
 
-        public OrdersController(ApplicationDbContext context)
+        public OrdersController(ApplicationDbContext context, UserManager<Client> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
         // GET: Orders
@@ -49,7 +54,8 @@ namespace AutoZone.Controllers
         // GET: Orders/Create
         public IActionResult Create()
         {
-            ViewData["ClientId"] = new SelectList(_context.Users, "Id", "Id");
+            //ViewData["ClientId"] = new SelectList(_context.Users, "Id", "Id");
+
             ViewData["VehicleId"] = new SelectList(_context.Vehicles, "Id", "Id");
             return View();
         }
@@ -59,15 +65,19 @@ namespace AutoZone.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,ClientId,VehicleId,OrderDate")] Order order)
+        public async Task<IActionResult> Create([Bind("Id,VehicleId")] Order order)
         {
+
+            order.ClientId = _userManager.GetUserId(User);
+            order.OrderDate = DateTime.Now;
+
             if (ModelState.IsValid)
             {
-                _context.Add(order);
+                _context.Orders.Add(order);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ClientId"] = new SelectList(_context.Users, "Id", "Id", order.ClientId);
+            //ViewData["ClientId"] = new SelectList(_context.Users, "Id", "Id", order.ClientId);
             ViewData["VehicleId"] = new SelectList(_context.Vehicles, "Id", "Id", order.VehicleId);
             return View(order);
         }

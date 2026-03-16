@@ -88,7 +88,10 @@
                 @Html.DisplayFor(modelItem => item.Power)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ImageURL)
+                @if (!string.IsNullOrEmpty(item.ImageURL))
+                {
+                    <img src="@item.ImageURL" alt="Vehicle Image" style="max-width: 100px; max-height: 100px;" />
+                }
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Price)

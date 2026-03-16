@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\1212-4\\Desktop\\An7on\\\u041F\u0440\u043E\u0435\u043A\u0442\\AutoZone-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{026E9B86-AF94-49A2-8EC1-19874045F2CB}|AutoZone.csproj|c:\\users\\1212-4\\desktop\\an7on\\\u043F\u0440\u043E\u0435\u043A\u0442\\autozone-project\\views\\vehicles\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{026E9B86-AF94-49A2-8EC1-19874045F2CB}|AutoZone.csproj|solutionrelative:views\\vehicles\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{026E9B86-AF94-49A2-8EC1-19874045F2CB}|AutoZone.csproj|c:\\users\\1212-4\\desktop\\an7on\\\u043F\u0440\u043E\u0435\u043A\u0442\\autozone-project\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{026E9B86-AF94-49A2-8EC1-19874045F2CB}|AutoZone.csproj|solutionrelative:controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{026E9B86-AF94-49A2-8EC1-19874045F2CB}|AutoZone.csproj|c:\\users\\1212-4\\desktop\\an7on\\\u043F\u0440\u043E\u0435\u043A\u0442\\autozone-project\\views\\vehicles\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{026E9B86-AF94-49A2-8EC1-19874045F2CB}|AutoZone.csproj|solutionrelative:views\\vehicles\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{026E9B86-AF94-49A2-8EC1-19874045F2CB}|AutoZone.csproj|c:\\users\\1212-4\\desktop\\an7on\\\u043F\u0440\u043E\u0435\u043A\u0442\\autozone-project\\controllers\\vehiclescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{026E9B86-AF94-49A2-8EC1-19874045F2CB}|AutoZone.csproj|solutionrelative:controllers\\vehiclescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{026E9B86-AF94-49A2-8EC1-19874045F2CB}|AutoZone.csproj|c:\\users\\1212-4\\desktop\\an7on\\\u043F\u0440\u043E\u0435\u043A\u0442\\autozone-project\\models\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{026E9B86-AF94-49A2-8EC1-19874045F2CB}|AutoZone.csproj|solutionrelative:models\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{026E9B86-AF94-49A2-8EC1-19874045F2CB}|AutoZone.csproj|c:\\users\\1212-4\\desktop\\an7on\\\u043F\u0440\u043E\u0435\u043A\u0442\\autozone-project\\views\\orders\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{026E9B86-AF94-49A2-8EC1-19874045F2CB}|AutoZone.csproj|solutionrelative:views\\orders\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,6 +22,10 @@
           "Children": [
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
@@ -37,59 +33,29 @@
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\1212-4\\Desktop\\An7on\\\u041F\u0440\u043E\u0435\u043A\u0442\\AutoZone-Project\\Views\\Vehicles\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\Vehicles\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\1212-4\\Desktop\\An7on\\\u041F\u0440\u043E\u0435\u043A\u0442\\AutoZone-Project\\Views\\Vehicles\\Edit.cshtml",
-              "RelativeToolTip": "Views\\Vehicles\\Edit.cshtml",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAE0AAAAxAAAAAAAAAA==",
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\1212-4\\Desktop\\An7on\\\u041F\u0440\u043E\u0435\u043A\u0442\\AutoZone-Project\\Views\\Orders\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Orders\\Create.cshtml",
+              "ToolTip": "C:\\Users\\1212-4\\Desktop\\An7on\\\u041F\u0440\u043E\u0435\u043A\u0442\\AutoZone-Project\\Views\\Orders\\Create.cshtml",
+              "RelativeToolTip": "Views\\Orders\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-09T11:06:01.816Z",
+              "WhenOpened": "2026-03-16T10:52:14.456Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\1212-4\\Desktop\\An7on\\\u041F\u0440\u043E\u0435\u043A\u0442\\AutoZone-Project\\Views\\Vehicles\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Vehicles\\Create.cshtml",
-              "ToolTip": "C:\\Users\\1212-4\\Desktop\\An7on\\\u041F\u0440\u043E\u0435\u043A\u0442\\AutoZone-Project\\Views\\Vehicles\\Create.cshtml",
-              "RelativeToolTip": "Views\\Vehicles\\Create.cshtml",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAAADsAAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-09T10:45:49.282Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "VehiclesController.cs",
-              "DocumentMoniker": "C:\\Users\\1212-4\\Desktop\\An7on\\\u041F\u0440\u043E\u0435\u043A\u0442\\AutoZone-Project\\Controllers\\VehiclesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\VehiclesController.cs",
-              "ToolTip": "C:\\Users\\1212-4\\Desktop\\An7on\\\u041F\u0440\u043E\u0435\u043A\u0442\\AutoZone-Project\\Controllers\\VehiclesController.cs",
-              "RelativeToolTip": "Controllers\\VehiclesController.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAmwG0AAAAuAAAAAAAAAA==",
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\1212-4\\Desktop\\An7on\\\u041F\u0440\u043E\u0435\u043A\u0442\\AutoZone-Project\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\1212-4\\Desktop\\An7on\\\u041F\u0440\u043E\u0435\u043A\u0442\\AutoZone-Project\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "Controllers\\OrdersController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAIwEsAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T10:45:28.469Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Vehicle.cs",
-              "DocumentMoniker": "C:\\Users\\1212-4\\Desktop\\An7on\\\u041F\u0440\u043E\u0435\u043A\u0442\\AutoZone-Project\\Models\\Vehicle.cs",
-              "RelativeDocumentMoniker": "Models\\Vehicle.cs",
-              "ToolTip": "C:\\Users\\1212-4\\Desktop\\An7on\\\u041F\u0440\u043E\u0435\u043A\u0442\\AutoZone-Project\\Models\\Vehicle.cs",
-              "RelativeToolTip": "Models\\Vehicle.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T10:45:25.321Z",
+              "WhenOpened": "2026-03-16T10:41:02.918Z",
               "EditorCaption": ""
             }
           ]
