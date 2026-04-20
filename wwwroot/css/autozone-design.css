@@ -1,0 +1,593 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: block;
+}
+
+/* Home И News */
+.home-section, .news-hero-section, .cars-hero-section {
+    position: relative;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.home-section {
+    background-image: url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1920&q=80');
+    min-height: 100vh;
+}
+
+.news-hero-section {
+    min-height: 50vh;
+    background-image: url('https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=1920&q=80');
+}
+
+.cars-hero-section {
+    min-height: 50vh;
+    background-image: url('https://wallpapercat.com/w/middle-retina/0/7/8/5818272-3840x1080-desktop-dual-screen-cool-car-background-image.jpg');
+}
+
+.home-overlay {
+    position: absolute;
+    inset: 0 0 -24px 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+}
+
+.home-content {
+    position: relative;
+    z-index: 10;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.home-title {
+    font-size: clamp(32px, 7vw, 64px);
+    font-weight: bold;
+    color: white;
+    margin-bottom: 24px;
+}
+
+.home-highlight {
+    color: #3b82f6;
+}
+
+.home-description {
+    font-size: clamp(16px, 2.5vw, 20px);
+    color: white;
+    margin: 0 auto 32px;
+    max-width: 700px;
+    line-height: 1.6;
+}
+
+.home-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 48px;
+}
+
+.home-btn {
+    padding: 14px 32px;
+    font-size: clamp(14px, 2vw, 16px);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.home-btn-primary {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.home-btn-primary:hover {
+    background-color: #2563eb;
+}
+
+.home-btn-secondary {
+    background-color: white;
+    color: #2c2c2c;
+}
+
+.home-btn-secondary:hover {
+    background-color: #e5e7eb;
+}
+
+.home-stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: clamp(24px, 5vw, 40px);
+    padding-top: 32px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.stat-number {
+    font-size: clamp(28px, 5vw, 40px);
+    font-weight: bold;
+    color: white;
+    margin: 0 0 4px;
+    text-align: center;
+}
+
+.stat-label {
+    font-size: clamp(12px, 2vw, 14px);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Vehicles */
+.featured-vehicles {
+    padding: clamp(40px, 8vw, 80px) 20px;
+    background: white;
+}
+
+.featured-header {
+    text-align: center;
+    margin-bottom: clamp(30px, 6vw, 50px);
+}
+
+.featured-title, .news-section-title {
+    font-size: clamp(28px, 5vw, 42px);
+    font-weight: bold;
+    color: #2c2c2c;
+    margin-bottom: 12px;
+}
+
+.featured-subtitle {
+    font-size: clamp(16px, 2.5vw, 18px);
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.vehicles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: clamp(20px, 4vw, 30px);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.vehicle-card {
+    border: 1px solid #ddd;
+}
+
+.vehicle-card:hover {
+    border-color: #3b82f6;
+}
+
+.vehicle-image {
+    width: 100%;
+    height: 240px;
+}
+
+.vehicle-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.vehicle-info {
+    padding: clamp(15px, 3vw, 20px);
+}
+
+.vehicle-name {
+    font-size: clamp(18px, 3vw, 22px);
+    font-weight: bold;
+    color: #2c2c2c;
+    margin: 0 0 12px;
+}
+
+.vehicle-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 0 0 20px;
+    color: #666;
+    font-size: clamp(13px, 2vw, 14px);
+}
+
+.vehicle-details i {
+    color: #3b82f6;
+}
+
+.vehicle-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.vehicle-price {
+    font-size: clamp(20px, 3.5vw, 24px);
+    font-weight: bold;
+    color: #3b82f6;
+}
+
+.vehicle-btn {
+    padding: 10px 24px;
+    background-color: #2c2c2c;
+    color: white;
+    text-decoration: none;
+    font-size: clamp(13px, 2vw, 14px);
+    font-weight: 600;
+}
+
+.vehicle-btn:hover {
+    background-color: #3b82f6;
+}
+
+/* Navigation */
+.nav-bar {
+    background-color: #2c2c2c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 clamp(20px, 4vw, 50px);
+    position: relative;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: clamp(20px, 3vw, 24px);
+    font-weight: bold;
+    padding: clamp(12px, 2vw, 15px) 0;
+    position: absolute;
+    left: clamp(20px, 4vw, 50px);
+}
+
+.nav-logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-logo img {
+    height: clamp(35px, 5vw, 45px);
+}
+
+.nav-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 5px;
+}
+
+.nav-bar a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: clamp(12px, 2vw, 18px) clamp(20px, 3vw, 30px);
+}
+
+ .nav-bar a:hover {
+    background-color: #3b82f6;
+}
+
+@media (max-width: 900px) {
+    .nav-bar {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0 16px 12px;
+    }
+
+    .nav-logo {
+        position: static;
+        justify-content: center;
+    }
+
+    .nav-bar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* Contacts */
+.contact-us {
+    text-align: center;
+    margin: clamp(30px, 5vw, 50px) 0 15px;
+    font-size: clamp(20px, 4vw, 28px);
+    color: #2c2c2c;
+}
+
+.contact-description {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    padding: 0 20px;
+    font-size: clamp(18px, 2vw, 20px);
+    color: #555;
+    line-height: 1.6;
+}
+
+.contact-layout {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 1400px;
+}
+
+.contacts-container {
+    border: 2px solid #000;
+    padding: clamp(15px, 3vw, 20px);
+    flex: 1 1 500px;
+    min-width: 450px;
+    max-width: 700px;
+}
+
+.contacts-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts-container label {
+    margin: 15px 0 5px;
+    font-weight: bold;
+}
+
+.contacts-container input, .contacts-container textarea {
+    padding: 10px;
+    border: 1px solid #6e6e6e;
+    font-size: clamp(12px, 2vw, 14px);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contacts-container button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #353535;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: clamp(14px, 2.5vw, 16px);
+}
+
+.contacts-container button:hover {
+    background-color: #000;
+}
+
+.contact-info-left, .contact-info-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-info-box {
+    background-color: #f5f5f5;
+    border: 2px solid #2e2e2e;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-info-box i {
+    font-size: 40px;
+    color: #353535;
+    margin-bottom: 10px;
+}
+
+.contact-info-box h3 {
+    margin: 10px 0;
+    color: #2c2c2c;
+    font-size: clamp(16px, 2.5vw, 18px);
+}
+
+.contact-info-box p {
+    margin: 5px 0;
+    color: #555;
+    font-size: clamp(14px, 2vw, 16px);
+}
+
+/* About */
+.about-header {
+    font-family: 'Courier New', monospace;
+    font-size: clamp(16px, 3vw, 20px);
+    margin: 20px;
+}
+
+.about-header h1, .about-header h2 {
+    text-align: center;
+}
+
+.about-us {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(20px, 4vw, 40px);
+    padding: 0 10px;
+}
+
+.about-us p {
+    max-width: 800px;
+    flex: 1 1 300px;
+    text-align: justify;
+    font-size: clamp(16px, 2vw, 18px);
+}
+
+.about-us iframe {
+    flex: 1 1 300px;
+    max-width: 100%;
+    min-width: 280px;
+    border: 2px solid #000;
+}
+
+.about-staffTeam {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 10px;
+}
+
+.profile {
+    border: 2px solid #2e2e2e;
+    padding: clamp(15px, 3vw, 20px);
+    margin: 20px;
+    max-width: 600px;
+    min-width: 280px;
+    flex: 1 1 300px;
+    text-align: center;
+}
+
+.profile img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.profile .role {
+    font-weight: bold;
+    color: #353535;
+    margin: 10px 0 5px;
+}
+
+.profile .description {
+    background-color: rgb(62, 62, 114);
+    color: #fff;
+    font-size: clamp(18px, 2vw, 20px);
+    line-height: 1.6;
+    margin-top: 10px;
+    text-align: left;
+    padding: 0 10px;
+}
+
+/* Footer */
+.footer {
+    margin-top: auto;
+    background-color: #2c2c2c;
+    color: white;
+    padding: clamp(8px, 2vw, 15px);
+    font-family: 'Courier New', monospace;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 0 10px;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+}
+
+.footer-left .to-top {
+    text-decoration: none;
+    font-size: clamp(12px, 2vw, 14px);
+    color: white;
+}
+
+.footer-left .to-top:hover {
+    text-decoration: underline;
+}
+
+.footer-center {
+    font-size: clamp(12px, 2vw, 14px);
+}
+
+.footer-right a {
+    margin-left: clamp(5px, 1.5vw, 10px);
+    color: white;
+    font-size: clamp(16px, 2.5vw, 18px);
+}
+
+.footer-right a:hover {
+    color: #3b82f6;
+}
+
+/* News */
+.news-content {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.news-section-title {
+    margin-bottom: 30px;
+}
+
+.news-list {
+    padding-left: 30px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.news-list li {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.news-main-image {
+    width: 100%;
+}
+
+.news-info-box {
+    margin-top: 40px;
+    background: #f5f5f5;
+    padding: 30px;
+}
+
+.news-info-title {
+    font-size: 25px;
+    color: #3b82f6;
+    margin-bottom: 25px;
+}
+
+.news-info-list {
+    padding-left: 20px;
+    color: #555;
+    line-height: 2;
+}
+
+.price-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+.price-table th {
+    background-color: #2c2c2c;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid #000;
+}
+
+.price-table td {
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    color: #555;
+}
+
+.price-table thead tr:first-child th {
+    text-align: center;
+    font-size: 20px;
+}

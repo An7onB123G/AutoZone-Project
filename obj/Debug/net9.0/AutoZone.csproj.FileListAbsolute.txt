@@ -574,7 +574,6 @@ C:\Users\an7on\Desktop\MainProject\AutoZone-Project\obj\Debug\net9.0\staticwebas
 C:\Users\an7on\Desktop\MainProject\AutoZone-Project\obj\Debug\net9.0\staticwebassets.build.json.cache
 C:\Users\an7on\Desktop\MainProject\AutoZone-Project\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\an7on\Desktop\MainProject\AutoZone-Project\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-C:\Users\an7on\Desktop\MainProject\AutoZone-Project\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\an7on\Desktop\MainProject\AutoZone-Project\obj\Debug\net9.0\AutoZone.csproj.Up2Date
 C:\Users\an7on\Desktop\MainProject\AutoZone-Project\obj\Debug\net9.0\AutoZone.dll
 C:\Users\an7on\Desktop\MainProject\AutoZone-Project\obj\Debug\net9.0\refint\AutoZone.dll
@@ -1188,3 +1187,5 @@ C:\Users\1212-4\Desktop\An7on\Проект\AutoZone-Project\obj\Debug\net9.0\ref
 C:\Users\1212-4\Desktop\An7on\Проект\AutoZone-Project\obj\Debug\net9.0\AutoZone.pdb
 C:\Users\1212-4\Desktop\An7on\Проект\AutoZone-Project\obj\Debug\net9.0\AutoZone.genruntimeconfig.cache
 C:\Users\1212-4\Desktop\An7on\Проект\AutoZone-Project\obj\Debug\net9.0\ref\AutoZone.dll
+C:\Users\an7on\Desktop\MainProject\AutoZone-Project\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\an7on\Desktop\MainProject\AutoZone-Project\obj\Debug\net9.0\compressed\cq2xvxxjiw-t9kga48ox0.gz
