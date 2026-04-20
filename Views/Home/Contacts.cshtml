@@ -2,47 +2,107 @@
     ViewData["Title"] = "Контакти";
 }
 
-<h1 class="contact-us">СВЪРЖЕТЕ СЕ С НАС</h1>
-<p class="contact-description">Имате въпрос или нужда от съвет? Свържете се с нас! Нашият екип е тук, за да ви помогне с всичко, от което се нуждаете. Очакваме вашето съобщение!</p>
-
-<div class="contact-layout">
-    <div class="contact-info-left">
-        <div class="contact-info-box">
-            <i class="fa-solid fa-phone"></i>
-            <h3>Телефон</h3>
-            <p>+359 123 456 789</p>
-        </div>
-        <div class="contact-info-box">
-            <i class="fa-solid fa-envelope"></i>
-            <h3>Email</h3>
-            <p>info@autozone.bg</p>
-        </div>
-    </div>
-
-    <div class="contacts-container">
-        <form>
-            <label>Напиши вашето име и Фамилия: </label>
-            <input type="text" placeholder="Име и Фамилия" required>
-            <label>Напиши вашия имейл адрес: </label>
-            <input type="email" placeholder="Имейл адрес" required>
-            <label>Напиши темата на съобщението: </label>
-            <input type="text" placeholder="Тема" required>
-            <label>Напиши вашето съобщение: </label>
-            <textarea placeholder="Вашето съобщение............" required></textarea>
-            <button type="submit">Изпрати</button>
-        </form>
-    </div>
-
-    <div class="contact-info-right">
-        <div class="contact-info-box">
-            <i class="fa-solid fa-location-dot"></i>
-            <h3>Адрес</h3>
-            <p>гр. Клисура, България</p>
-        </div>
-        <div class="contact-info-box">
-            <i class="fa-solid fa-clock"></i>
-            <h3>Работно време</h3>
-            <p>Пон-Пет: 9:00 - 18:00</p>
-        </div>
+<div class="contacts-hero-section">
+    <div class="home-overlay"></div>
+    <div class="home-content">
+        <h1 class="home-title">Свържете се с нас</h1>
+        <p class="home-description">
+            Имате въпрос или нужда от съвет? Нашият екип е тук, за да ви помогне бързо, ясно и професионално.
+        </p>
     </div>
 </div>
+
+<section class="contacts-page">
+    <div class="contacts-intro-card">
+        <p class="about-eyebrow">Контакт</p>
+        <h2 class="contacts-main-title">Изберете най-удобния начин да се свържете с Auto Zone</h2>
+        <p class="contacts-lead">
+            Може да ни пишете директно чрез формата, да се свържете по телефон или да ни посетите на място. Поддържаме бърза комуникация и ясно съдействие за всяко запитване.
+        </p>
+    </div>
+
+    <div class="contacts-cards-grid">
+        <article class="contacts-mini-card">
+            <div class="contacts-mini-icon"><i class="fa-solid fa-phone"></i></div>
+            <h3>Телефон</h3>
+            <p>+359 123 456 789</p>
+        </article>
+        <article class="contacts-mini-card">
+            <div class="contacts-mini-icon"><i class="fa-solid fa-envelope"></i></div>
+            <h3>Email</h3>
+            <p>info@autozone.bg</p>
+        </article>
+        <article class="contacts-mini-card">
+            <div class="contacts-mini-icon"><i class="fa-solid fa-clock"></i></div>
+            <h3>Работно време</h3>
+            <p>Пон-Пет: 9:00 - 18:00</p>
+        </article>
+    </div>
+
+    <div class="contacts-content-grid">
+        <div class="contacts-form-card">
+            <p class="about-section-kicker">Форма за контакт</p>
+            <h3>Изпратете ни съобщение</h3>
+            <p class="contacts-form-copy">Попълнете формата и ще се свържем с вас възможно най-скоро.</p>
+
+            <form class="contacts-form-modern">
+                <div class="contacts-form-row">
+                    <div class="contacts-field">
+                        <label>Име и фамилия</label>
+                        <input type="text" placeholder="Вашето име" required>
+                    </div>
+                    <div class="contacts-field">
+                        <label>Имейл адрес</label>
+                        <input type="email" placeholder="name@email.com" required>
+                    </div>
+                </div>
+
+                <div class="contacts-field">
+                    <label>Тема</label>
+                    <input type="text" placeholder="Темата на вашето съобщение" required>
+                </div>
+
+                <div class="contacts-field">
+                    <label>Съобщение</label>
+                    <textarea placeholder="Опишете накратко как можем да помогнем..." required></textarea>
+                </div>
+
+                <button type="submit" class="contacts-submit-btn">
+                    <span>Изпрати съобщение</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </form>
+        </div>
+
+        <aside class="contacts-info-card">
+            <p class="about-section-kicker">Локация</p>
+            <h3>Очакваме ви в Клисура, България</h3>
+            <p>Ако предпочитате личен контакт, посетете ни и говорете директно с нашия екип.</p>
+
+            <div class="contacts-address-list">
+                <div>
+                    <span class="contacts-info-label">Адрес</span>
+                    <strong>гр. Клисура, България</strong>
+                </div>
+                <div>
+                    <span class="contacts-info-label">Имейл</span>
+                    <strong>info@autozone.bg</strong>
+                </div>
+                <div>
+                    <span class="contacts-info-label">Телефон</span>
+                    <strong>+359 123 456 789</strong>
+                </div>
+            </div>
+
+            <div class="contacts-map-frame">
+                <iframe src="https://www.google.com/maps?q=Klisura,Bulgaria&output=embed"
+                        width="600"
+                        height="450"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy">
+                </iframe>
+            </div>
+        </aside>
+    </div>
+</section>

@@ -1,17 +1,44 @@
-<footer class="footer">
-    <div class="footer-content">
-        <div class="footer-left">
-            <a href="#top" class="to-top"><i class="fa-solid fa-arrow-up"></i> Към началото</a>
+<footer class="az-footer">
+    <div class="az-footer-shell">
+        <div class="az-footer-grid">
+            <div class="az-footer-brand-block">
+                <a class="az-footer-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="~/images/autozone/AutoZoneLogo.png" alt="AutoZone Logo" class="az-footer-logo" />
+                    <span class="az-footer-brand-text">AutoZone</span>
+                </a>
+                <p class="az-footer-copy">
+                    Модерен авто портал за новини, автомобили и директен контакт с екипа на AutoZone.
+                </p>
+            </div>
+
+            <div class="az-footer-links-block">
+                <h3 class="az-footer-title">Навигация</h3>
+                <div class="az-footer-links">
+                    <a asp-area="" asp-controller="Home" asp-action="Index">Начало</a>
+                    <a asp-area="" asp-controller="Home" asp-action="Cars">Коли</a>
+                    <a asp-area="" asp-controller="Home" asp-action="News">Новини</a>
+                    <a asp-area="" asp-controller="Home" asp-action="Contacts">Контакти</a>
+                    <a asp-area="" asp-controller="Home" asp-action="About">За нас</a>
+                </div>
+            </div>
+
+            <div class="az-footer-social-block">
+                <h3 class="az-footer-title">Следвайте ни</h3>
+                <div class="az-footer-socials">
+                    <a href="https://facebook.com" target="_blank" rel="noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://youtube.com" target="_blank" rel="noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <a href="#top" class="az-footer-top">
+                    <i class="fa-solid fa-arrow-up"></i>
+                    <span>Към началото</span>
+                </a>
+            </div>
         </div>
 
-        <div class="footer-center">
-            <p>© 2025 Auto Zone — Всички права запазени.</p>
-        </div>
-
-        <div class="footer-right">
-            <a href="https://facebook.com" target="_blank" rel="noreferrer"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://instagram.com" target="_blank" rel="noreferrer"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://youtube.com" target="_blank" rel="noreferrer"><i class="fa-brands fa-youtube"></i></a>
+        <div class="az-footer-bottom">
+            <p>© 2026 AutoZone. Всички права запазени.</p>
+            <p>Driven by design and speed.</p>
         </div>
     </div>
 </footer>

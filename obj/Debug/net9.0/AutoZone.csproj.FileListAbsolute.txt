@@ -1188,4 +1188,4 @@ C:\Users\1212-4\Desktop\An7on\Проект\AutoZone-Project\obj\Debug\net9.0\Aut
 C:\Users\1212-4\Desktop\An7on\Проект\AutoZone-Project\obj\Debug\net9.0\AutoZone.genruntimeconfig.cache
 C:\Users\1212-4\Desktop\An7on\Проект\AutoZone-Project\obj\Debug\net9.0\ref\AutoZone.dll
 C:\Users\an7on\Desktop\MainProject\AutoZone-Project\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
-C:\Users\an7on\Desktop\MainProject\AutoZone-Project\obj\Debug\net9.0\compressed\cq2xvxxjiw-t9kga48ox0.gz
+C:\Users\an7on\Desktop\MainProject\AutoZone-Project\obj\Debug\net9.0\compressed\cq2xvxxjiw-igrr73ozmu.gz
