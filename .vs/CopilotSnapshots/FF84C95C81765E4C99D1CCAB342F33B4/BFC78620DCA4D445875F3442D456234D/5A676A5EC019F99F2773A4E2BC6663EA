@@ -1,0 +1,104 @@
+﻿@{
+    ViewData["Title"] = "Начало";
+}
+
+<div class="home-section">
+    <div class="home-overlay"></div>
+    <div class="home-content">
+        <h1 class="home-title">
+            Намерете вашата перфектна<br>
+            <span class="home-highlight">употребявана кола</span>
+        </h1>
+        <p class="home-description">
+            Открийте качествени употребявани автомобили на конкурентни цени. Всяка кола е прегледана и сертифицирана за вашето спокойствие.
+        </p>
+
+        <div class="home-buttons">
+            <a asp-controller="Home" asp-action="Cars" class="home-btn home-btn-primary">
+                Разгледайте коли
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a asp-controller="Home" asp-action="Contacts" class="home-btn home-btn-secondary">
+                Свържете се с нас
+            </a>
+        </div>
+
+        <div class="home-stats">
+            <div class="stat-item">
+                <p class="stat-number">500+</p>
+                <p class="stat-label">Налични коли</p>
+            </div>
+            <div class="stat-item">
+                <p class="stat-number">10k+</p>
+                <p class="stat-label">Доволни клиенти</p>
+            </div>
+            <div class="stat-item">
+                <p class="stat-number">15+</p>
+                <p class="stat-label">Години опит</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="featured-vehicles">
+    <div class="featured-header">
+        <h2 class="featured-title">Featured Vehicles</h2>
+        <p class="featured-subtitle">Открийте нашите най-популярни и качествени употребявани автомобили</p>
+    </div>
+
+    <div class="vehicles-grid">
+        <div class="vehicle-card">
+            <div class="vehicle-image">
+                <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=600&q=80" alt="Ferrari">
+            </div>
+            <div class="vehicle-info">
+                <h3 class="vehicle-name">Ferrari</h3>
+                <p class="vehicle-details">
+                    <span><i class="fa-solid fa-calendar"></i> 2020</span>
+                    <span><i class="fa-solid fa-road"></i> 45,000 км</span>
+                    <span><i class="fa-solid fa-gas-pump"></i> Дизел</span>
+                </p>
+                <div class="vehicle-footer">
+                    <span class="vehicle-price">525,500 лв</span>
+                    <a asp-controller="Home" asp-action="News" class="vehicle-btn">Детайли</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="vehicle-card">
+            <div class="vehicle-image">
+                <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=600&q=80" alt="Audi">
+            </div>
+            <div class="vehicle-info">
+                <h3 class="vehicle-name">Audi</h3>
+                <p class="vehicle-details">
+                    <span><i class="fa-solid fa-calendar"></i> 2019</span>
+                    <span><i class="fa-solid fa-road"></i> 52,000 км</span>
+                    <span><i class="fa-solid fa-gas-pump"></i> Бензин</span>
+                </p>
+                <div class="vehicle-footer">
+                    <span class="vehicle-price">58,900 лв</span>
+                    <a asp-controller="Home" asp-action="News" class="vehicle-btn">Детайли</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="vehicle-card">
+            <div class="vehicle-image">
+                <img src="https://images.unsplash.com/photo-1612825173281-9a193378527e?w=600&q=80" alt="Lamborghini">
+            </div>
+            <div class="vehicle-info">
+                <h3 class="vehicle-name">Lamborghini</h3>
+                <p class="vehicle-details">
+                    <span><i class="fa-solid fa-calendar"></i> 2021</span>
+                    <span><i class="fa-solid fa-road"></i> 32,000 км</span>
+                    <span><i class="fa-solid fa-gas-pump"></i> Дизел</span>
+                </p>
+                <div class="vehicle-footer">
+                    <span class="vehicle-price">1,132,500 лв</span>
+                    <a asp-controller="Home" asp-action="News" class="vehicle-btn">Детайли</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

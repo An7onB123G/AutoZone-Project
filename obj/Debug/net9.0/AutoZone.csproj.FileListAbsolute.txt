@@ -506,7 +506,6 @@ C:\Users\an7on\Desktop\MainProject\AutoZone-Project\obj\Debug\net9.0\compressed\
 C:\Users\an7on\Desktop\MainProject\AutoZone-Project\obj\Debug\net9.0\compressed\nezrqnk58p-muycvpuwrr.gz
 C:\Users\an7on\Desktop\MainProject\AutoZone-Project\obj\Debug\net9.0\compressed\v0zgfp0y55-87fc7y1x7t.gz
 C:\Users\an7on\Desktop\MainProject\AutoZone-Project\obj\Debug\net9.0\compressed\yfc7ypekbg-mlv21k5csn.gz
-C:\Users\an7on\Desktop\MainProject\AutoZone-Project\obj\Debug\net9.0\compressed\tj0an35zcn-b9sayid5wm.gz
 C:\Users\an7on\Desktop\MainProject\AutoZone-Project\obj\Debug\net9.0\compressed\n1jkrvdvl1-61n19gt1b8.gz
 C:\Users\an7on\Desktop\MainProject\AutoZone-Project\obj\Debug\net9.0\compressed\v3xj2n689a-xtxxf3hu2r.gz
 C:\Users\an7on\Desktop\MainProject\AutoZone-Project\obj\Debug\net9.0\compressed\gc18dmnk7j-t1cqhe9u97.gz
@@ -1188,5 +1187,6 @@ C:\Users\1212-4\Desktop\An7on\Проект\AutoZone-Project\obj\Debug\net9.0\Aut
 C:\Users\1212-4\Desktop\An7on\Проект\AutoZone-Project\obj\Debug\net9.0\AutoZone.genruntimeconfig.cache
 C:\Users\1212-4\Desktop\An7on\Проект\AutoZone-Project\obj\Debug\net9.0\ref\AutoZone.dll
 C:\Users\an7on\Desktop\MainProject\AutoZone-Project\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
-C:\Users\an7on\Desktop\MainProject\AutoZone-Project\obj\Debug\net9.0\compressed\cq2xvxxjiw-igrr73ozmu.gz
 C:\Users\1212-4\Desktop\An7on\Проект\AutoZone-Project\obj\Debug\net9.0\compressed\cq2xvxxjiw-vvhlp1h2e8.gz
+C:\Users\an7on\Desktop\MainProject\AutoZone-Project\obj\Debug\net9.0\compressed\tj0an35zcn-lna5shjiq0.gz
+C:\Users\an7on\Desktop\MainProject\AutoZone-Project\obj\Debug\net9.0\compressed\cq2xvxxjiw-ggywa6zg46.gz

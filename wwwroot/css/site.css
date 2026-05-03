@@ -1,3 +1,5 @@
+﻿@charset "UTF-8";
+
 html {
   font-size: 14px;
 }
@@ -6,6 +8,10 @@ html {
   html {
     font-size: 16px;
   }
+}
+
+body {
+  font-family: Arial, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {

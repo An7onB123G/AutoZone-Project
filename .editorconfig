@@ -1,0 +1,13 @@
+root = true
+
+[*]
+charset = utf-8-bom
+
+[*.cshtml]
+charset = utf-8-bom
+
+[*.css]
+charset = utf-8-bom
+
+[*.cs]
+charset = utf-8-bom

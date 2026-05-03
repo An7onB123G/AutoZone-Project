@@ -1,0 +1,54 @@
+﻿@model IEnumerable<AutoZone.Models.Vehicle>
+@{
+    ViewData["Title"] = "Коли";
+}
+
+<div class="cars-hero-section">
+    <div class="home-overlay"></div>
+    <div class="home-content">
+        <h1 class="home-title">Нашите автомобили</h1>
+        <p class="home-description">
+            Разгледайте нашата впечатляваща колекция от качествени употребявани автомобили. Всяка кола е внимателно подбрана и проверена.
+        "</p>
+    </div>
+</div>
+
+<div class="featured-vehicles">
+    <div class="featured-header">
+        <h2 class="featured-title">Налични автомобили</h2>
+        <p class="featured-subtitle">Разгледайте нашата пълна колекция от качествени употребявани автомобили</p>
+    </div>
+
+    <div class="vehicles-grid">
+        @if (Model != null && Model.Any())
+        {
+            foreach (var vehicle in Model)
+            {
+                <div class="vehicle-card">
+                    <div class="vehicle-image">
+                        <img src="@(string.IsNullOrWhiteSpace(vehicle.ImageURL) ? "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600&q=80" : vehicle.ImageURL)" alt="@vehicle.BrandModels?.Brand @vehicle.BrandModels?.Model">
+                    </div>
+                    <div class="vehicle-info">
+                        <h3 class="vehicle-name">@vehicle.BrandModels?.Brand @vehicle.BrandModels?.Model</h3>
+                        <p class="vehicle-details">
+                            <span><i class="fa-solid fa-calendar"></i> @vehicle.Year</span>
+                            <span><i class="fa-solid fa-road"></i> @vehicle.Mileage.ToString("N0") км</span>
+                            <span><i class="fa-solid fa-gas-pump"></i> @vehicle.EngineTypes?.Name</span>
+                        </p>
+                        <div class="vehicle-footer">
+                            <span class="vehicle-price">@vehicle.Price.ToString("N0") лв</span>
+                            <a asp-controller="Vehicles" asp-action="Details" asp-route-id="@vehicle.Id" class="vehicle-btn">Детайли</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="about-intro-card">
+                <h2 class="about-main-title">Няма налични автомобили</h2>
+                <p class="about-lead">В момента няма активни автомобили в базата данни. Добави нови записи и те ще се покажат тук.</p>
+            </div>
+        }
+    </div>
+</div>

@@ -1,0 +1,85 @@
+﻿@{
+    ViewData["Title"] = "Администраторски панел";
+}
+
+<div class="admin-hero">
+    <div>
+        <p class="admin-kicker">Администратор</p>
+        <h1>Администраторски панел</h1>
+        <p>Управлявай съдържанието на платформата и настройките на каталога.</p>
+    </div>
+</div>
+
+<section class="admin-page">
+    <div class="admin-grid">
+        <article class="admin-card">
+            <div class="admin-card-header">
+                <i class="fa-solid fa-car"></i>
+                <div>
+                    <h2>Автомобили</h2>
+                    <p>Добавяй, редактирай и управлявай автопарка.</p>
+                </div>
+            </div>
+            <div class="admin-card-actions">
+                <a asp-controller="Vehicles" asp-action="Index">Всички автомобили</a>
+                <a asp-controller="Vehicles" asp-action="Create" class="admin-primary">Създай автомобил</a>
+            </div>
+        </article>
+
+        <article class="admin-card">
+            <div class="admin-card-header">
+                <i class="fa-solid fa-tags"></i>
+                <div>
+                    <h2>Марки и модели</h2>
+                    <p>Поддържай списъка с брандове и модели.</p>
+                </div>
+            </div>
+            <div class="admin-card-actions">
+                <a asp-controller="BrandModels" asp-action="Index">Всички модели</a>
+                <a asp-controller="BrandModels" asp-action="Create" class="admin-primary">Добави модел</a>
+            </div>
+        </article>
+
+        <article class="admin-card">
+            <div class="admin-card-header">
+                <i class="fa-solid fa-layer-group"></i>
+                <div>
+                    <h2>Типове автомобили</h2>
+                    <p>Категоризирай автомобилите по тип.</p>
+                </div>
+            </div>
+            <div class="admin-card-actions">
+                <a asp-controller="CarTypes" asp-action="Index">Всички типове</a>
+                <a asp-controller="CarTypes" asp-action="Create" class="admin-primary">Добави тип</a>
+            </div>
+        </article>
+
+        <article class="admin-card">
+            <div class="admin-card-header">
+                <i class="fa-solid fa-gas-pump"></i>
+                <div>
+                    <h2>Типове двигатели</h2>
+                    <p>Обновявай списъка с двигатели.</p>
+                </div>
+            </div>
+            <div class="admin-card-actions">
+                <a asp-controller="EngineTypes" asp-action="Index">Всички двигатели</a>
+                <a asp-controller="EngineTypes" asp-action="Create" class="admin-primary">Добави двигател</a>
+            </div>
+        </article>
+
+        <article class="admin-card">
+            <div class="admin-card-header">
+                <i class="fa-solid fa-receipt"></i>
+                <div>
+                    <h2>Поръчки</h2>
+                    <p>Следи и управлявай клиентските заявки.</p>
+                </div>
+            </div>
+            <div class="admin-card-actions">
+                <a asp-controller="Orders" asp-action="Index">Всички поръчки</a>
+                <a asp-controller="Orders" asp-action="Create" class="admin-primary">Създай поръчка</a>
+            </div>
+        </article>
+    </div>
+</section>

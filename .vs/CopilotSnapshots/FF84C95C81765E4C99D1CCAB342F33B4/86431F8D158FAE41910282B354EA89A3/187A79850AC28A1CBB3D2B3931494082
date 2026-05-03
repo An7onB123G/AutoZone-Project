@@ -1,0 +1,44 @@
+﻿@{
+    var currentAction = ViewContext.RouteData.Values["action"]?.ToString() ?? string.Empty;
+    string ActiveClass(string action) => string.Equals(currentAction, action, System.StringComparison.OrdinalIgnoreCase) ? "active" : string.Empty;
+}
+
+<header class="az-nav-wrap">
+    <nav class="navbar navbar-expand-lg navbar-dark az-nav-shell">
+        <div class="container-fluid az-nav-container">
+            <a class="navbar-brand az-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                <img src="~/images/autozone/AutoZoneLogo.png" alt="AutoZone Logo" class="az-brand-logo" />
+                <span class="az-brand-text">AutoZone</span>
+            </a>
+
+            <button class="navbar-toggler az-nav-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#publicNavbar" aria-controls="publicNavbar"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse az-nav-collapse" id="publicNavbar">
+                <ul class="navbar-nav az-nav-links mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link @ActiveClass("Index")" asp-area="" asp-controller="Home" asp-action="Index">Начало</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link @ActiveClass("Cars")" asp-area="" asp-controller="Home" asp-action="Cars">Коли</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link @ActiveClass("News")" asp-area="" asp-controller="Home" asp-action="News">Новини</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link @ActiveClass("Contacts")" asp-area="" asp-controller="Home" asp-action="Contacts">Контакти</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link @ActiveClass("About")" asp-area="" asp-controller="Home" asp-action="About">За нас</a>
+                    </li>
+                </ul>
+
+                <div class="az-nav-actions">
+                    <partial name="_LoginPartial" />
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
