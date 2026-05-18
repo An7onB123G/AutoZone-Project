@@ -7,6 +7,12 @@
 @if (SignInManager.IsSignedIn(User))
 {
     <li class="nav-item">
+        <a class="nav-link az-auth-cart" asp-area="" asp-controller="Orders" asp-action="Index" title="Моите поръчки">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>Моите поръчки</span>
+        </a>
+    </li>
+    <li class="nav-item">
         <a class="nav-link az-auth-user" asp-area="Identity" asp-page="/Account/Manage/Index" title="Профил">@User.Identity?.Name</a>
     </li>
     <li class="nav-item">

@@ -453,6 +453,17 @@ main {
     box-shadow: 0 12px 24px rgba(37, 99, 235, 0.32);
 }
 
+.az-auth-cart {
+    gap: 9px;
+    color: #ffffff !important;
+    background: #2563eb;
+    box-shadow: 0 12px 24px rgba(37, 99, 235, 0.24);
+}
+
+.az-auth-cart:hover {
+    background: #1d4ed8;
+}
+
 .az-auth-secondary:hover,
 .az-auth-primary:hover,
 .az-auth-user:hover,
@@ -515,6 +526,10 @@ main {
     .az-auth-list .nav-link,
     .az-auth-button {
         width: 100%;
+    }
+
+    .az-auth-cart {
+        gap: 10px;
     }
 }
 

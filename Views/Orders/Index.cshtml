@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<AutoZone.Models.Order>
 
 @{
-    ViewData["Title"] = User.IsInRole("Admin") ? "Всички поръчки" : "Моите покупки";
+    ViewData["Title"] = User.IsInRole("Admin") ? "Всички поръчки" : "Моите поръчки";
 }
 
 <h1>@ViewData["Title"]</h1>
@@ -34,7 +34,7 @@
                 }
                 else
                 {
-                    <span>Ваша покупка</span>
+                    <span>Ваша поръчка</span>
                 }
             </td>
             <td>

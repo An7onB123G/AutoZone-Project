@@ -1187,6 +1187,6 @@ C:\Users\1212-4\Desktop\An7on\Проект\AutoZone-Project\obj\Debug\net9.0\Aut
 C:\Users\1212-4\Desktop\An7on\Проект\AutoZone-Project\obj\Debug\net9.0\ref\AutoZone.dll
 C:\Users\1212-4\Desktop\An7on\Проект\AutoZone-Project\obj\Debug\net9.0\compressed\cq2xvxxjiw-vvhlp1h2e8.gz
 C:\Users\an7on\Desktop\MainProject\AutoZone-Project\obj\Debug\net9.0\compressed\tj0an35zcn-lna5shjiq0.gz
-C:\Users\an7on\Desktop\MainProject\AutoZone-Project\obj\Debug\net9.0\compressed\cq2xvxxjiw-2jws8vxudf.gz
 C:\Users\an7on\Desktop\MainProject\AutoZone-Project\obj\Debug\net9.0\compressed\v3xj2n689a-fxoo2ykyh1.gz
+C:\Users\an7on\Desktop\MainProject\AutoZone-Project\obj\Debug\net9.0\compressed\cq2xvxxjiw-66tj8a5f5w.gz
 C:\Users\an7on\Desktop\MainProject\AutoZone-Project\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
