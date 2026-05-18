@@ -27,7 +27,18 @@ namespace AutoZone.Controllers
         // GET: Orders
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.Orders.Include(o => o.Clients).Include(o => o.Vehicle);
+            var applicationDbContext = _context.Orders
+                .Include(o => o.Clients)
+                .Include(o => o.Vehicle)
+                    .ThenInclude(v => v.BrandModels)
+                .AsQueryable();
+
+            if (!User.IsInRole("Admin"))
+            {
+                var userId = _userManager.GetUserId(User);
+                applicationDbContext = applicationDbContext.Where(o => o.ClientId == userId);
+            }
+
             return View(await applicationDbContext.ToListAsync());
         }
 
@@ -42,22 +53,28 @@ namespace AutoZone.Controllers
             var order = await _context.Orders
                 .Include(o => o.Clients)
                 .Include(o => o.Vehicle)
+                    .ThenInclude(v => v.BrandModels)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (order == null)
             {
                 return NotFound();
             }
 
+            if (!User.IsInRole("Admin") && order.ClientId != _userManager.GetUserId(User))
+            {
+                return Forbid();
+            }
+
             return View(order);
         }
 
         // GET: Orders/Create
-        public IActionResult Create()
+        public IActionResult Create(int? vehicleId)
         {
             //ViewData["ClientId"] = new SelectList(_context.Users, "Id", "Id");
 
-            ViewData["VehicleId"] = new SelectList(_context.Vehicles, "Id", "Id");
-            return View();
+            PopulateVehicleSelectList(vehicleId);
+            return View(new Order { VehicleId = vehicleId ?? 0 });
         }
 
         // POST: Orders/Create
@@ -68,7 +85,7 @@ namespace AutoZone.Controllers
         public async Task<IActionResult> Create([Bind("Id,VehicleId")] Order order)
         {
 
-            order.ClientId = _userManager.GetUserId(User);
+            order.ClientId = _userManager.GetUserId(User)!;
             order.OrderDate = DateTime.Now;
 
             if (ModelState.IsValid)
@@ -78,11 +95,12 @@ namespace AutoZone.Controllers
                 return RedirectToAction(nameof(Index));
             }
             //ViewData["ClientId"] = new SelectList(_context.Users, "Id", "Id", order.ClientId);
-            ViewData["VehicleId"] = new SelectList(_context.Vehicles, "Id", "Id", order.VehicleId);
+            PopulateVehicleSelectList(order.VehicleId);
             return View(order);
         }
 
         // GET: Orders/Edit/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -105,6 +123,7 @@ namespace AutoZone.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int id, [Bind("Id,ClientId,VehicleId,OrderDate")] Order order)
         {
             if (id != order.Id)
@@ -138,6 +157,7 @@ namespace AutoZone.Controllers
         }
 
         // GET: Orders/Delete/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -160,6 +180,7 @@ namespace AutoZone.Controllers
         // POST: Orders/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var order = await _context.Orders.FindAsync(id);
@@ -175,6 +196,22 @@ namespace AutoZone.Controllers
         private bool OrderExists(int id)
         {
             return _context.Orders.Any(e => e.Id == id);
+        }
+
+        private void PopulateVehicleSelectList(int? selectedVehicleId = null)
+        {
+            var vehicles = _context.Vehicles
+                .Include(v => v.BrandModels)
+                .OrderBy(v => v.BrandModels.Brand)
+                .ThenBy(v => v.BrandModels.Model)
+                .Select(v => new
+                {
+                    v.Id,
+                    Name = v.BrandModels.Brand + " " + v.BrandModels.Model + " - " + v.Year
+                })
+                .ToList();
+
+            ViewData["VehicleId"] = new SelectList(vehicles, "Id", "Name", selectedVehicleId);
         }
     }
 }

@@ -11,7 +11,7 @@ using AutoZone.Models;
 
 namespace AutoZone.Controllers
 {
-    //[Authorize(Roles = "Admin")]
+    [Authorize(Roles = "Admin")]
     public class EngineTypesController : Controller
     {
         private readonly ApplicationDbContext _context;

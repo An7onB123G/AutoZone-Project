@@ -11,7 +11,7 @@ using AutoZone.Models;
 
 namespace AutoZone.Controllers
 {
-    //[Authorize(Roles = "Admin")]
+    [Authorize(Roles = "Admin")]
     public class VehiclesController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -29,6 +29,7 @@ namespace AutoZone.Controllers
         }
 
         // GET: Vehicles/Details/5
+        [AllowAnonymous]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)

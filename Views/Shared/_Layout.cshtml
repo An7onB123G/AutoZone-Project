@@ -1,3 +1,11 @@
+@{
+    var requestPath = Context.Request.Path.Value ?? string.Empty;
+    var bodyClass = requestPath.StartsWith("/Identity/Account/Manage", StringComparison.OrdinalIgnoreCase)
+        ? "az-identity-page az-identity-manage"
+        : requestPath.StartsWith("/Identity/Account", StringComparison.OrdinalIgnoreCase)
+            ? "az-identity-page"
+            : string.Empty;
+}
 <!DOCTYPE html>
 <html lang="bg">
 <head>
@@ -11,7 +19,7 @@
     <link rel="stylesheet" href="~/AutoZone.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
-<body id="top">
+<body id="top" class="@bodyClass">
     <partial name="_PublicNav" />
     <div class="container">
         <main role="main" class="pb-3">
